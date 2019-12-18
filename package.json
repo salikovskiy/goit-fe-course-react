@@ -35,5 +35,6 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1"
-  }
+  },
+  "homepage": "https://salikovskiy.github.io/goit-fe-course-react/"
 }
