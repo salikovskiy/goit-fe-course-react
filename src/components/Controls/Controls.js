@@ -7,10 +7,10 @@ const Controls = ({
   nextBtnDisabled
 }) => (
   <section>
-    <button type="button" onClick={onPrevClick} {...prevBtnDisabled}>
+    <button type="button" onClick={onPrevClick} disabled={prevBtnDisabled}>
       Назад
     </button>
-    <button type="button" onClick={onNextClick} {...nextBtnDisabled}>
+    <button type="button" onClick={onNextClick} disabled={nextBtnDisabled}>
       Вперед
     </button>
   </section>

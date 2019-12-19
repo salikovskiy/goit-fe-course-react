@@ -17,9 +17,9 @@ class Reader extends Component {
     this.setState({ publicationIndex: this.state.publicationIndex + 1 });
 
   render() {
-    const disabledPrev = this.state.publicationIndex === 0 ? "disabled" : "";
+    const disabledPrev = this.state.publicationIndex === 0 ? true : false;
     const disabledNext =
-      this.state.publicationIndex === this.items.length ? "disabled" : "";
+      this.state.publicationIndex + 1 === this.items.length ? true : false;
 
     const publication = this.items[this.state.publicationIndex];
     return (
