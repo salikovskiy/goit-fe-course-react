@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Contacts from "../Contact/Contact";
-import Filter from "../Filter/Filter";
-import ContactForm from "../ContactForm/ContactForm";
+import Contacts from "./Contact/Contact";
+import Filter from "./Filter/Filter";
+import ContactForm from "./ContactForm/ContactForm";
 
 const randomID = require("uuid/v1");
 

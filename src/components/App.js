@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import Feedback from "./Feedback/Feedback";
-import Reader from "./Reader/Reader";
-import publications from "./Reader/publications.json";
 import Phonebook from "./Phonebook/Phonebook";
 
 class App extends Component {
@@ -45,7 +42,6 @@ class App extends Component {
   render() {
     return (
       <>
-        <Feedback />
         <Phonebook
           getContact={this.getContact}
           data={this.state.contacts}
@@ -53,7 +49,6 @@ class App extends Component {
           search={this.dataSeacrh}
           delete={this.deleteContact}
         />
-        <Reader items={publications} />
       </>
     );
   }
