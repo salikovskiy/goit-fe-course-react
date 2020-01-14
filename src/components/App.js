@@ -24,12 +24,16 @@ class App extends Component {
   };
 
   getContact = contact => {
-    console.log(...this.state.contacts);
-    this.setState(prev => {
-      return {
-        contacts: [...prev.contacts, contact]
-      };
-    });
+    if (this.state.contacts.find(elem => elem.name === contact.name)) {
+      alert("this name already exist");
+    } else {
+      console.log(...this.state.contacts);
+      this.setState(prev => {
+        return {
+          contacts: [...prev.contacts, contact]
+        };
+      });
+    }
     console.log(this.state);
   };
 
