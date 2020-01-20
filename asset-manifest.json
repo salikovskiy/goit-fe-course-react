@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-fe-course-react/static/css/main.3ac42a62.chunk.css",
-    "main.js": "/goit-fe-course-react/static/js/main.7b85bc36.chunk.js",
-    "main.js.map": "/goit-fe-course-react/static/js/main.7b85bc36.chunk.js.map",
+    "main.js": "/goit-fe-course-react/static/js/main.ba8e020f.chunk.js",
+    "main.js.map": "/goit-fe-course-react/static/js/main.ba8e020f.chunk.js.map",
     "runtime-main.js": "/goit-fe-course-react/static/js/runtime-main.3ad2351c.js",
     "runtime-main.js.map": "/goit-fe-course-react/static/js/runtime-main.3ad2351c.js.map",
     "static/js/2.9285de3d.chunk.js": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js",
     "static/js/2.9285de3d.chunk.js.map": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js.map",
     "index.html": "/goit-fe-course-react/index.html",
-    "precache-manifest.499f35239e033fc4dc2ee6116ca1b9cc.js": "/goit-fe-course-react/precache-manifest.499f35239e033fc4dc2ee6116ca1b9cc.js",
+    "precache-manifest.fcb0a1049d5a312a8e83f1e88f9b6004.js": "/goit-fe-course-react/precache-manifest.fcb0a1049d5a312a8e83f1e88f9b6004.js",
     "service-worker.js": "/goit-fe-course-react/service-worker.js",
     "static/css/main.3ac42a62.chunk.css.map": "/goit-fe-course-react/static/css/main.3ac42a62.chunk.css.map",
     "static/js/2.9285de3d.chunk.js.LICENSE": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3ad2351c.js",
     "static/js/2.9285de3d.chunk.js",
     "static/css/main.3ac42a62.chunk.css",
-    "static/js/main.7b85bc36.chunk.js"
+    "static/js/main.ba8e020f.chunk.js"
   ]
 }
