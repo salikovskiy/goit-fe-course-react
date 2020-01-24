@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4a2b5ea878c60172fad3824227cfea4",
+    "revision": "a05172026f3a36200d91e24d94fb8105",
     "url": "/goit-fe-course-react/index.html"
   },
   {
-    "revision": "1a248c267b0e7980be8c",
+    "revision": "85c68382c7bdc2c258ba",
     "url": "/goit-fe-course-react/static/css/main.9a981bd5.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goit-fe-course-react/static/js/7.126db6cd.chunk.js"
   },
   {
-    "revision": "1a248c267b0e7980be8c",
-    "url": "/goit-fe-course-react/static/js/main.cfe0fb56.chunk.js"
+    "revision": "85c68382c7bdc2c258ba",
+    "url": "/goit-fe-course-react/static/js/main.57a41e62.chunk.js"
   },
   {
     "revision": "1f20659b9028a6a8f602",
