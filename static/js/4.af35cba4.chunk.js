@@ -1,0 +1,2 @@
+(this["webpackJsonpgoit-fe-course-react"]=this["webpackJsonpgoit-fe-course-react"]||[]).push([[4],{67:function(e,t,a){"use strict";a.r(t);var i=a(0),c=a.n(i),n=a(14);t.default=function(e){var t=e.data;e.changeId;return t.map((function(e){return c.a.createElement("li",{key:e.id},c.a.createElement(n.b,{key:e.id,to:{pathname:"/goit-fe-course-react/movies/".concat(e.id),state:{id:e.id}}},e.original_title))}))}}}]);
+//# sourceMappingURL=4.af35cba4.chunk.js.map
