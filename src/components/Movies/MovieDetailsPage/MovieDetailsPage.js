@@ -1,31 +1,33 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import services from "../../services/services";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Cast from "../Cast/Cast";
-import Reviews from "../Reviews/Reviews";
+const Reviews = React.lazy(() => import("../Reviews/Reviews"));
+const Cast = React.lazy(() => import("../Cast/Cast"));
 const defaultImgURL = "https://image.tmdb.org/t/p/w300/";
 
 class MovieDetailsPage extends Component {
   state = {
     movie: [],
     reviews: [],
-    actors: []
+    actors: [],
+    id: null
   };
 
   componentDidMount = async () => {
-    await services.getDetailsById(this.props.location.state.id).then(data => {
-      this.setState({ movie: data.data });
+    await services.getDetailsById(this.props.match.params.id).then(data => {
+      this.setState({ movie: data.data, id: this.props.match.params.id });
     });
+    // this.props.history.push(`/movies/${this.props.location.state.id}`);
   };
 
   handleCast = () => {
-    services.getActorsById(this.props.location.state.id).then(data => {
+    services.getActorsById(this.state.id).then(data => {
       this.setState({ actors: data.data });
     });
   };
 
   handleReviews = () => {
-    services.getReviewsById(this.props.location.state.id).then(data => {
+    services.getReviewsById(this.state.id).then(data => {
       this.setState({ reviews: data.data });
     });
   };
@@ -36,31 +38,34 @@ class MovieDetailsPage extends Component {
       movie.length !== 0 && (
         <>
           <BrowserRouter>
-            <div>
-              <img
-                src={`${defaultImgURL}${movie.poster_path}`}
-                alt="movie-posters"
-              />
-              <h1>{movie.original_title}</h1>
-              <p>User score: {Math.round(movie.popularity)}%</p>
-              <h2>Overview:</h2>
-              <p>{movie.overview}</p>
-              <h2>Genres:</h2>
+            <img
+              src={`${defaultImgURL}${movie.poster_path}`}
+              alt="movie-posters"
+            />
+            <h1>{movie.original_title}</h1>
+            <p>User score: {Math.round(movie.popularity)} points</p>
+            <h2>Overview:</h2>
+            <p>{movie.overview}</p>
+            <h2>Genres:</h2>
 
-              <span>{movie.genres[0].name}</span>
-              <hr />
-              <h3>Additional information</h3>
-              <Link to={`/movies/${movie.id}/cast`} onClick={this.handleCast}>
-                Cast
-              </Link>
-              <Link
-                to={`/movies/${movie.id}/reviews`}
-                onClick={this.handleReviews}
-              >
-                Reviews
-              </Link>
-              <hr />
-              <Switch>
+            <ul>
+              {movie.genres.length !== 0 &&
+                movie.genres.map(elem => <li key={elem.id}>{elem.name}</li>)}
+            </ul>
+            <hr />
+            <h3>Additional information</h3>
+            <Link to={`/movies/${movie.id}/cast`} onClick={this.handleCast}>
+              Cast
+            </Link>
+            <Link
+              to={`/movies/${movie.id}/reviews`}
+              onClick={this.handleReviews}
+            >
+              Reviews
+            </Link>
+            <hr />
+            <Switch>
+              <Suspense fallback={<div>Загрузка...</div>}>
                 <Route
                   exact
                   path="/movies/:id/cast"
@@ -71,8 +76,8 @@ class MovieDetailsPage extends Component {
                   path="/movies/:id/reviews"
                   render={() => <Reviews reviews={this.state.reviews} />}
                 />
-              </Switch>
-            </div>
+              </Suspense>
+            </Switch>
           </BrowserRouter>
         </>
       )

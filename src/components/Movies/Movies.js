@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import services from "../services/services";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import HomePage from "./HomePage/HomePage";
-import MoviesPage from "./MoviesPage/MoviesPage";
-import MovieDetailsPage from "./MovieDetailsPage/MovieDetailsPage";
+import { BrowserRouter, Route, Switch, Link, Redirect } from "react-router-dom";
+const HomePage = React.lazy(() => import("./HomePage/HomePage"));
+const MoviesPage = React.lazy(() => import("./MoviesPage/MoviesPage"));
+const MovieDetailsPage = React.lazy(() =>
+  import("./MovieDetailsPage/MovieDetailsPage")
+);
 
 class Movies extends Component {
   state = {
@@ -27,14 +29,16 @@ class Movies extends Component {
             <Link to="/movies">Movie</Link>
           </ul>
           <Switch>
-            <Route path="/" exact>
-              <HomePage exact data={this.state.movies} />
-            </Route>
+            <Suspense fallback={<div>Загрузка...</div>}>
+              <Route path="/" exact>
+                <HomePage exact data={this.state.movies} />
+              </Route>
+              <Route exact path="/movies" component={MoviesPage} />
+              <Route exact path="/movies/:id" component={MovieDetailsPage} />
+            </Suspense>
 
-            <Route exact path="/movies">
-              <MoviesPage />
-            </Route>
-            <Route exact path="/movies/:id" component={MovieDetailsPage} />
+            <Redirect from="/movies/:id/cast" to="/movies/:id" />
+            <Redirect from="/movies/:id/reviews" to="/movies/:id" />
           </Switch>
         </BrowserRouter>
       </>
