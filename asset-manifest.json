@@ -1,22 +1,32 @@
 {
   "files": {
-    "main.css": "/goit-fe-course-react/static/css/main.3ac42a62.chunk.css",
-    "main.js": "/goit-fe-course-react/static/js/main.ba8e020f.chunk.js",
-    "main.js.map": "/goit-fe-course-react/static/js/main.ba8e020f.chunk.js.map",
-    "runtime-main.js": "/goit-fe-course-react/static/js/runtime-main.3ad2351c.js",
-    "runtime-main.js.map": "/goit-fe-course-react/static/js/runtime-main.3ad2351c.js.map",
-    "static/js/2.9285de3d.chunk.js": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js",
-    "static/js/2.9285de3d.chunk.js.map": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js.map",
+    "main.css": "/goit-fe-course-react/static/css/main.9a981bd5.chunk.css",
+    "main.js": "/goit-fe-course-react/static/js/main.90199a72.chunk.js",
+    "main.js.map": "/goit-fe-course-react/static/js/main.90199a72.chunk.js.map",
+    "runtime-main.js": "/goit-fe-course-react/static/js/runtime-main.05959a5d.js",
+    "runtime-main.js.map": "/goit-fe-course-react/static/js/runtime-main.05959a5d.js.map",
+    "static/js/2.92d27fd1.chunk.js": "/goit-fe-course-react/static/js/2.92d27fd1.chunk.js",
+    "static/js/2.92d27fd1.chunk.js.map": "/goit-fe-course-react/static/js/2.92d27fd1.chunk.js.map",
+    "static/js/3.b23dc563.chunk.js": "/goit-fe-course-react/static/js/3.b23dc563.chunk.js",
+    "static/js/3.b23dc563.chunk.js.map": "/goit-fe-course-react/static/js/3.b23dc563.chunk.js.map",
+    "static/js/4.1f0ec036.chunk.js": "/goit-fe-course-react/static/js/4.1f0ec036.chunk.js",
+    "static/js/4.1f0ec036.chunk.js.map": "/goit-fe-course-react/static/js/4.1f0ec036.chunk.js.map",
+    "static/js/5.669bbe19.chunk.js": "/goit-fe-course-react/static/js/5.669bbe19.chunk.js",
+    "static/js/5.669bbe19.chunk.js.map": "/goit-fe-course-react/static/js/5.669bbe19.chunk.js.map",
+    "static/js/6.33362909.chunk.js": "/goit-fe-course-react/static/js/6.33362909.chunk.js",
+    "static/js/6.33362909.chunk.js.map": "/goit-fe-course-react/static/js/6.33362909.chunk.js.map",
+    "static/js/7.126db6cd.chunk.js": "/goit-fe-course-react/static/js/7.126db6cd.chunk.js",
+    "static/js/7.126db6cd.chunk.js.map": "/goit-fe-course-react/static/js/7.126db6cd.chunk.js.map",
     "index.html": "/goit-fe-course-react/index.html",
-    "precache-manifest.fcb0a1049d5a312a8e83f1e88f9b6004.js": "/goit-fe-course-react/precache-manifest.fcb0a1049d5a312a8e83f1e88f9b6004.js",
+    "precache-manifest.2cddf9f781926488358736db187af743.js": "/goit-fe-course-react/precache-manifest.2cddf9f781926488358736db187af743.js",
     "service-worker.js": "/goit-fe-course-react/service-worker.js",
-    "static/css/main.3ac42a62.chunk.css.map": "/goit-fe-course-react/static/css/main.3ac42a62.chunk.css.map",
-    "static/js/2.9285de3d.chunk.js.LICENSE": "/goit-fe-course-react/static/js/2.9285de3d.chunk.js.LICENSE"
+    "static/css/main.9a981bd5.chunk.css.map": "/goit-fe-course-react/static/css/main.9a981bd5.chunk.css.map",
+    "static/js/2.92d27fd1.chunk.js.LICENSE": "/goit-fe-course-react/static/js/2.92d27fd1.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ad2351c.js",
-    "static/js/2.9285de3d.chunk.js",
-    "static/css/main.3ac42a62.chunk.css",
-    "static/js/main.ba8e020f.chunk.js"
+    "static/js/runtime-main.05959a5d.js",
+    "static/js/2.92d27fd1.chunk.js",
+    "static/css/main.9a981bd5.chunk.css",
+    "static/js/main.90199a72.chunk.js"
   ]
 }
